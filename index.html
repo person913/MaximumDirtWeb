@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Maximum Dirt Studios — an independent game studio. See our games and get in touch.">
+<title>Maximum Dirt Studios</title>
+
+<!-- social-preview.png (1200x630) ships alongside this file — just update
+     og:url / og:image / twitter:image below to your real deployed domain. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maximum Dirt Studios">
+<meta property="og:title" content="Maximum Dirt Studios">
+<meta property="og:description" content="An independent game studio building small, finished games.">
+<meta property="og:url" content="https://maximumdirt.studio/">
+<meta property="og:image" content="https://maximumdirt.studio/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maximum Dirt Studios">
+<meta name="twitter:description" content="An independent game studio building small, finished games.">
+<meta name="twitter:image" content="https://maximumdirt.studio/social-preview.png">
+<meta name="theme-color" content="#0c0b09">
+<link rel="canonical" href="https://maximumdirt.studio/">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="manifest" href="site.webmanifest">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Maximum Dirt Studios",
+  "url": "https://maximumdirt.studio/",
+  "email": "contact@maximumdirt.studio",
+  "description": "An independent game studio building small, finished games.",
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#hero">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 24 L15 8 L19 17 L25 6" stroke="#c8863c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Maximum Dirt
+    </a>
+    <input type="checkbox" id="navCheck" class="nav-check">
+    <div class="nav-links" id="navLinks">
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn small" href="#contact">Get in touch</a>
+      <label class="nav-toggle" for="navCheck" aria-label="Toggle menu"><span></span></label>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Independent game studio</span>
+        <h1>Maximum<br>Dirt Studios</h1>
+        <p class="lede">We build small, sharp games and see them through to the end. No bloat, no vaporware — just games worth finishing and worth playing.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#games">See the games</a>
+          <a class="btn secondary" href="#about">About the studio</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="layerA" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1c1913"/><stop offset="1" stop-color="#141210"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="420" height="420" fill="url(#layerA)" rx="4"/>
+          <g fill="none" stroke="#2f2a22" stroke-width="1.5">
+            <path d="M0 90 C120 60,300 120,420 80"/>
+            <path d="M0 170 C120 145,300 200,420 160"/>
+            <path d="M0 250 C120 225,300 285,420 240"/>
+            <path d="M0 330 C120 305,300 365,420 320"/>
+          </g>
+          <path d="M0 330 C120 305,300 365,420 320 L420 420 L0 420 Z" fill="#8f5f28" opacity=".16"/>
+          <path d="M0 250 C120 225,300 285,420 240 L420 330 C300 365,120 305,0 330 Z" fill="#c8863c" opacity=".14"/>
+          <circle cx="292" cy="196" r="4" fill="#c8863c"/>
+          <circle cx="140" cy="128" r="3" fill="#c8863c" opacity=".7"/>
+          <circle cx="330" cy="292" r="3" fill="#c8863c" opacity=".5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="games">
+    <div class="wrap section">
+      <div class="section-head">
+        <span class="eyebrow">Games</span>
+        <h2>What we've made</h2>
+        <p>Everything below is a real, playable build. macOS app downloads and source are linked where available.</p>
+      </div>
+
+      <!--
+        EDIT ME — one block per game. Duplicate a .game block to add more.
+        Wire the two links in .game-actions to your real files:
+          - "Download for Mac"  -> path to the .zip containing the .app bundle
+          - "Source"            -> path to the source .zip, or a repo URL
+        Until real files are in place, the links below point at /downloads/
+        placeholders and are marked aria-disabled + tabindex="-1" so they
+        neither look clickable nor can be activated by mouse or keyboard.
+        Once a real href is in place, remove both aria-disabled="true" and
+        tabindex="-1" from that link so it becomes a normal, working button.
+      -->
+      <div class="game-list">
+
+        <article class="game">
+          <div class="game-cover">
+            <svg class="strata" viewBox="0 0 280 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="280" height="220" fill="#141210"/>
+              <path d="M0 60 C80 40,200 80,280 55 L280 0 L0 0 Z" fill="#1c1913"/>
+              <path d="M0 150 C80 130,200 175,280 145 L280 220 L0 220 Z" fill="#8f5f28" opacity=".18"/>
+            </svg>
+            <span class="tag-corner">01</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3 class="game-title">[Game One Title]</h3>
+              <div class="game-tags"><span class="tag">[Genre]</span><span class="tag">[Platform]</span><span class="tag">[Status]</span></div>
+            </div>
+            <p class="game-desc">[One or two sentences: what the game is, the hook, and what makes it worth playing. Replace this with your real description.]</p>
+            <div class="game-actions">
+              <a class="btn small" href="downloads/game-one-mac.zip" aria-disabled="true" tabindex="-1">Download for Mac</a>
+              <a class="btn small secondary" href="downloads/game-one-source.zip" aria-disabled="true" tabindex="-1">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game">
+          <div class="game-cover">
+            <svg class="strata" viewBox="0 0 280 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="280" height="220" fill="#141210"/>
+              <path d="M0 80 C80 55,200 100,280 70 L280 0 L0 0 Z" fill="#1c1913"/>
+              <path d="M0 165 C80 140,200 190,280 155 L280 220 L0 220 Z" fill="#c8863c" opacity=".15"/>
+            </svg>
+            <span class="tag-corner">02</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3 class="game-title">[Game Two Title]</h3>
+              <div class="game-tags"><span class="tag">[Genre]</span><span class="tag">[Platform]</span><span class="tag">[Status]</span></div>
+            </div>
+            <p class="game-desc">[One or two sentences: what the game is, the hook, and what makes it worth playing. Replace this with your real description.]</p>
+            <div class="game-actions">
+              <a class="btn small" href="downloads/game-two-mac.zip" aria-disabled="true" tabindex="-1">Download for Mac</a>
+              <a class="btn small secondary" href="downloads/game-two-source.zip" aria-disabled="true" tabindex="-1">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game">
+          <div class="game-cover">
+            <svg class="strata" viewBox="0 0 280 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="280" height="220" fill="#141210"/>
+              <path d="M0 50 C80 30,200 70,280 45 L280 0 L0 0 Z" fill="#1c1913"/>
+              <path d="M0 140 C80 115,200 165,280 130 L280 220 L0 220 Z" fill="#8f5f28" opacity=".2"/>
+            </svg>
+            <span class="tag-corner">03</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3 class="game-title">[Game Three Title]</h3>
+              <div class="game-tags"><span class="tag">[Genre]</span><span class="tag">[Platform]</span><span class="tag">[Status]</span></div>
+            </div>
+            <p class="game-desc">[One or two sentences: what the game is, the hook, and what makes it worth playing. Replace this with your real description.]</p>
+            <div class="game-actions">
+              <a class="btn small" href="downloads/game-three-mac.zip" aria-disabled="true" tabindex="-1">Download for Mac</a>
+              <a class="btn small secondary" href="downloads/game-three-source.zip" aria-disabled="true" tabindex="-1">Source</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <p class="game-note">These three slots carry over the games your previous site referenced. Send over titles, descriptions, cover art, and the .app / source files whenever you're ready, and they'll drop straight into these cards.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Contact</span>
+        <h2>Get in touch</h2>
+        <p>Got a suggestion, found a bug, or just want to say hi? Fill this out — it opens a pre-filled email to us, nothing gets sent silently behind the scenes.</p>
+      </div>
+
+      <!--
+        EDIT ME — this <select> should list your real games so people can
+        pick which one they're writing about. Keep it in sync with the
+        game titles in #games above. "General" always stays as the first,
+        catch-all option.
+
+        This form submits to FormSubmit.co — a free service that forwards
+        submissions straight to an inbox, no account or server required.
+        See the "How your contact form sends email" section in README.md
+        for the one-time setup step (confirming the email address).
+      -->
+      <form
+        id="contactForm"
+        class="contact-form"
+        action="https://formsubmit.co/contact@maximumdirt.studio"
+        method="POST"
+      >
+        <!-- FormSubmit config: plain, table-formatted email, no captcha page. -->
+        <input type="hidden" name="_subject" value="New message — Maximum Dirt Studios site">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Honeypot: invisible to people, bots often fill it in and get silently dropped. -->
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="cf-game">Which game is this about?</label>
+            <select id="cf-game" name="game">
+              <option value="General">General / not game-specific</option>
+              <option>[Game One Title]</option>
+              <option>[Game Two Title]</option>
+              <option>[Game Three Title]</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="cf-type">What's this about?</label>
+            <select id="cf-type" name="type">
+              <option>Suggestion</option>
+              <option>Bug report</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Your email <span class="optional">(optional, so we can reply)</span></label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="6" required placeholder="What's on your mind?"></textarea>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn">Send</button>
+          <p class="form-note" id="formNote">Sends straight to our inbox — no email app needed on your end.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="about" class="section">
+    <div class="wrap about-grid">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2 style="font-size:clamp(30px,3.6vw,44px);margin-top:10px">A small team, shipping real games</h2>
+        <p style="margin-top:22px">Maximum Dirt Studios is an independent game studio. We're a small team that prefers finishing things over talking about them — the goal on every project is a compact, polished game you can actually play, not a pitch deck.</p>
+        <p>We work close to the metal: small teams, tight scope, and enough craft that a five-minute demo still feels considered. If you want to know more about a specific project or what we're building next, use the form above.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><span>Studio</span><span>Maximum Dirt Studios</span></div>
+        <div class="fact"><span>Focus</span><span>PC games</span></div>
+        <div class="fact"><span>Team size</span><span>Small &amp; independent</span></div>
+        <div class="fact"><span>Status</span><span>Actively building</span></div>
+        <div class="fact"><span>Contact</span><span><a href="mailto:contact@maximumdirt.studio" style="color:var(--accent)">contact@maximumdirt.studio</a></span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="footer-row">
+    <span>© <span id="year">2026</span> Maximum Dirt Studios</span>
+    <a href="mailto:contact@maximumdirt.studio">contact@maximumdirt.studio</a>
+  </div>
+</footer>
+
+<!-- Site content and layout do not depend on JavaScript — this only tidies up
+     two small details for people who have it enabled. -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
